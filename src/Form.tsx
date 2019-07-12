@@ -49,6 +49,7 @@ const ChatForm: React.SFC<{}> = () => {
           </Form>
         )}
       />
+      <p className="is-size-3"> Last message</p>
       <p> {message} </p>
     </div>
   );
