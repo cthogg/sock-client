@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { Formik, Field, Form, FormikActions } from "formik";
+import { Formik, Field, Form } from "formik";
 import io from "socket.io-client";
 
 const CHAT_MESSAGE = "chat message";
-
-const socket = io("http://localhost:4000");
+const host = "https://murmuring-meadow-17796.herokuapp.com";
+//const host = "http://localhost:4000";
+const socket = io(host);
 
 interface Values {
   messageText: string;
