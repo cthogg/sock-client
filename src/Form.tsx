@@ -28,10 +28,7 @@ const ChatForm: React.SFC<{}> = () => {
         initialValues={{
           messageText: ""
         }}
-        onSubmit={(
-          values: Values,
-          { setSubmitting }: FormikActions<Values>
-        ) => {
+        onSubmit={(values: Values) => {
           const message = JSON.stringify(values, null, 2);
           setMessage(values.messageText);
           socket.emit(CHAT_MESSAGE, message);
@@ -43,8 +40,11 @@ const ChatForm: React.SFC<{}> = () => {
               name="messageText"
               placeholder={placeholderText}
               type="text"
+              className="input"
             />
-            <button type="submit">Edit Text</button>
+            <button className="button" type="submit">
+              <span className=""> Edit Text </span>
+            </button>
           </Form>
         )}
       />

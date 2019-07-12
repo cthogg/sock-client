@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import ChatPage from "./ChatPage";
+import "./App.sass";
 
 const App: React.FC = () => {
   return (

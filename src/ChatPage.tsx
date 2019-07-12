@@ -6,7 +6,7 @@ const ChatPage: React.FC = () => {
   return (
     <React.Fragment>
       <div>
-        <h3> Chat Page </h3>
+        <h3 className={"is-size-2"}> Chat Page </h3>
         <ChatForm />
       </div>
     </React.Fragment>
