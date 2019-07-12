@@ -9,6 +9,7 @@
     "@types/react-dom": "16.8.4",
     "@types/socket.io-client": "^1.4.32",
     "formik": "^1.5.8",
+    "gh-pages": "^2.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1",
@@ -16,6 +17,8 @@
     "typescript": "3.5.3"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -39,5 +42,6 @@
   "devDependencies": {
     "bulma": "^0.7.5",
     "node-sass": "^4.12.0"
-  }
+  },
+  "homepage": "https://cthogg.github.io/sock-client"
 }
